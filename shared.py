@@ -17,9 +17,9 @@ class Square:
 
 class ClassifiedSquare:
     def __init__(self):
-        self.not_shot = 0
-        self.miss = 1
-        self.hit = 2
+        self.not_shot = 10
+        self.miss = 11
+        self.hit = 12
 
 
 squares = Square()

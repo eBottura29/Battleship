@@ -4,20 +4,23 @@ from shared import *
 def player_ship_choice(board):
     new_board = board
 
-    destroyer = input(f"Enter index for destroyer (size = {squares.destroyer_size}): ")
-    destroyer_rotation = input("Enter rotation index for destroyer: ")
+    destroyer = int(input(f"Enter index for destroyer (size = {squares.destroyer_size}): "))
+    destroyer_rotation = int(input("Enter rotation index for destroyer: "))
 
-    submarine = input(f"Enter index for submarine (size = {squares.submarine_size}): ")
-    submarine_rotation = input("Enter rotation index for submarine: ")
+    for i in range(squares.destroyer_size):
+        continue
 
-    cruiser = input(f"Enter index for cruiser (size = {squares.cruiser_size}): ")
-    cruiser_rotation = input("Enter rotation index for cruiser: ")
+    submarine = int(input(f"Enter index for submarine (size = {squares.submarine_size}): "))
+    submarine_rotation = int(input("Enter rotation index for submarine: "))
 
-    battleship = input(f"Enter index for battleship (size = {squares.battleship_size}): ")
-    battleship_rotation = input("Enter rotation index for battleship: ")
+    cruiser = int(input(f"Enter index for cruiser (size = {squares.cruiser_size}): "))
+    cruiser_rotation = int(input("Enter rotation index for cruiser: "))
 
-    carrier = input(f"Enter index for carrier (size = {squares.carrier_size}): ")
-    carrier_rotation = input("Enter rotation index for carrier: ")
+    battleship = int(input(f"Enter index for battleship (size = {squares.battleship_size}): "))
+    battleship_rotation = int(input("Enter rotation index for battleship: "))
+
+    carrier = int(input(f"Enter index for carrier (size = {squares.carrier_size}): "))
+    carrier_rotation = int(input("Enter rotation index for carrier: "))
 
     return new_board
 
